@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:SportShop xmlns:sh="http://nure.ua/bookShop" xmlns:ns2="http://www.example.org/first" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/first first.xsd">
+    <ns2:sportinv id="3">
+        <ns2:name>Тренажер 'Spartacus'</ns2:name>
+        <ns2:company>SUPER</ns2:company>
+        <ns2:description>Тренажер 'Spartacus' – отличное решение для домашних тренировок на растяжку. Модель при правильном использовании выдерживает неограниченную нагрузку, не имеет ограничений по полу и возрасту. Длина в сложенном состоянии - 105 см.</ns2:description>
+        <ns2:price>890.0</ns2:price>
+        <ns2:category>Fitness and aerobics</ns2:category>
+        <ns2:CodeTovars>000011</ns2:CodeTovars>
+    </ns2:sportinv>
+</ns2:SportShop>

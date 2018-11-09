@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="goodviev.xsl"?>
+<SportShop xmlns:sh="http://www.example.org/first"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/first first.xsd ">
+	<order id="0">
+		<name>Тренажер "Spartacus"</name>
+		<company>SUPER</company>
+		<description>Тренажер "Spartacus" – отличное решение для домашних
+			тренировок на растяжку. Модель при правильном использовании
+			выдерживает неограниченную нагрузку, не имеет ограничений по полу и
+			возрасту. Длина в сложенном состоянии - 105 см.</description>
+		<price>890.0</price>
+		<category>Fitness and aerobics</category>
+		<CodeTovars>000011</CodeTovars>
+	</order>
+	<order id="1">
+		<name>Тренажёр для растяжки шпагата ног Triton Shpagat</name>
+		<company>СУПЕR</company>
+		<description>Универсальный тренажер для растяжки ног Trion. Он сделает
+			ваши упражнения по растяжке простыми и приятными. Максимальный вес
+			пользователя - 300 кг.</description>
+		<price>837.0</price>
+		<category>Fitness and aerobics</category>
+		<CodeTovars>000012</CodeTovars>
+	</order>
+	<order id="2">
+		<name>Беговая дорожка Hop-Sport электрическая HS-1402</name>
+		<company>HOP-SPOT</company>
+		<description>Беговая дорожка электрическая Hop-Sport HS-1402 – новинка
+			среди продуктов бренда. Данная модель – идеальное решение для
+			тренировок спортсменов различного уровня подготовки. Особенность
+			модели – компактные габариты, стабильная конструкция, небольшой вес и
+			стильный дизайн. Для комфорта пользователя предлагается 15 различных
+			программ различной интенсивности и сложности. Максимальная скорость –
+			16 км/ч, максимальный вес пользователя – 150 кг.</description>
+		<price>20988.0</price>
+		<category>Fitness and aerobics</category>
+		<CodeTovars>000013</CodeTovars>
+	</order>
+</SportShop>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SportShop xmlns="http://www.example.org/first">
+	<sportinv id="3">
+		<name>Тренажер 'Spartacus'</name>
+		<company>SUPER</company>
+		<description>Тренажер 'Spartacus' – отличное решение для домашних
+			тренировок на растяжку. Модель при правильном использовании
+			выдерживает неограниченную нагрузку, не имеет ограничений по полу и
+			возрасту. Длина в сложенном состоянии - 105 см.</description>
+		<price>890.0</price>
+		<category>Fitness and aerobics</category>
+		<codetovars>000011</codetovars>
+	</sportinv>
+</SportShop>

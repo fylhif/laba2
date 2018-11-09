@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sh:SportShop xmlns:sh="http://www.example.org/first" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/first first.xsd ">
+  <sh:sportinv id="0">
+    <sh:name>sh:name</sh:name>
+    <sh:company>sh:company</sh:company>
+    <sh:description>sh:description</sh:description>
+    <sh:price>0.0</sh:price>
+    <sh:category>Fitness and aerobics</sh:category>
+    <sh:CodeTovars>000000</sh:CodeTovars>
+  </sh:sportinv>
+</sh:SportShop>

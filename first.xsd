@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/first" xmlns:sh="http://www.example.org/first"
+	elementFormDefault="qualified">
+
+	<xsd:element name="SportShop">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="sportinv" type="sh:SportInv"
+					maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:complexType name="SportInv">
+		<xsd:complexContent>
+			<xsd:extension base="sh:Entity">
+				<xsd:all>
+					<xsd:element name="name" type="xsd:string" minOccurs="1"
+						maxOccurs="1" />
+					<xsd:element name="company" type="xsd:string"
+						minOccurs="1" maxOccurs="1" />
+					<xsd:element name="description" type="sh:description"
+						minOccurs="1" maxOccurs="1" />
+					<xsd:element name="price" type="sh:Price" />
+					<xsd:element name="category" type="sh:Category" />
+					<xsd:element name="CodeTovars" minOccurs="0" maxOccurs="1"
+						default="000000">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9]" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+				</xsd:all>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="Entity" abstract="true">
+		<xsd:attribute name="id" type="sh:EntityId" use="required" />
+	</xsd:complexType>
+
+	<xsd:simpleType name="Price">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:fractionDigits value="2" />
+			<xsd:totalDigits value="5" />
+			<xsd:minInclusive value="0" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="description">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="10" />
+			<xsd:maxLength value="144" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="Category">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Fitness and aerobics" />
+			<xsd:enumeration value="Simulators and sports equipment" />
+			<xsd:enumeration value="Game kinds of sports" />
+			<xsd:enumeration value="Bicycles, electric bicycles and accessories" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="EntityId">
+		<xsd:restriction base="xsd:int">
+			<xsd:minInclusive value="-1" />
+			<xsd:maxExclusive value="99999999" />
+			<xsd:pattern value="[0-9]*" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>
